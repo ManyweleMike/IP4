@@ -20,7 +20,7 @@ Open a new terminal and run the same commands in the backend folder
 
  `npm start`
 
- ### Go ahead a nd add a product (note that the price field only takes a numeric input)
+Go ahead a nd add a product (note that the price field only takes a numeric input)
 
 
 
