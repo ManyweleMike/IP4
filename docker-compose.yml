@@ -1,0 +1,49 @@
+version: "3.8"
+services:
+  mongodb:
+    container_name: mongodb
+    image: mongo:4.2
+    volumes:
+      - yolomy:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - ecomm-network
+  backend:
+    container_name: backend
+    build: ./backend
+    image: manywele/backend:1.0.0
+    ports:
+      - "5000:5000"
+    volumes:
+      - logs:/app/logs
+      - ./backend:/app
+      - /app/node_modules
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+    environment:
+      - MONGO_URI=mongodb://mongodb/yolomy
+    networks:
+      - ecomm-network
+  client:
+    container_name: client
+    build: ./client
+    image: manywele/client:1.0.0
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client/src:/app/src
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
+    networks:
+      - ecomm-network
+networks:
+  ecomm-network:
+    driver: bridge
+volumes:
+  yolomy:
+  logs:
