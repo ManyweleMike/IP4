@@ -29,9 +29,10 @@ Go ahead a nd add a product (note that the price field only takes a numeric inpu
 
  ##  Build e-commerce full stack application using docker-compose
 
- ## set up
- 1: Fork and clone this
- 2: Add Dockerfile to /client and /backend
+ ## SET UP
+1: Fork and clone this
+ 
+2: Add Dockerfile to /client and /backend
 
 3: Add docker-compose.yml to home directory ./
 
