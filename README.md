@@ -28,3 +28,15 @@ Open a new terminal and run the same commands in the backend folder
  ##  Create a Basic Microservice
 
  ##  Build e-commerce full stack application using docker-compose
+
+ ## set up
+ 1: Fork and clone this
+ 2: Add Dockerfile to /client and /backend
+
+3: Add docker-compose.yml to home directory ./
+
+4: Create an account in dockerhub
+
+5: Create repository in dockerhub
+
+
