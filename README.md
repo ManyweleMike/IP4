@@ -1,26 +1,17 @@
-### Ansible
+### Kubernetes
 
-## STEPS
-1: Create required files
 
-   ansible.cfg -this states our inventory location
-   Vagrantfile
-   hosts -this is our inventory that has the defined servers
-   playbook.yml - this has our main play
-   vars.yml - we define our variables in this file and import them into playbook.yml
-2: Initialize roles for abstraction purposes
-    [ansible-galaxy init <roleName>]
-    We will use 3 roles in this case and add them to a role folder
+### GCP Prerequisties
 
-       git - Installs git
-       docker -Installs dependencies, docker and docker-compose
-       docker-compose -Starts our docker compose
-3: Run the playbook through vagrant provision
-    vagrant up
-    vagrant provision
-   access the app through the browser http://localhost:3000 . forwarded ports added in Vagrantfile
+### STEPS 
 
-     config.vm.network "forwarded_port", guest: 3000, host: 3000, protocol: "tcp"
-    config.vm.network "forwarded_port", guest: 5000, host: 5000, protocol: "tcp"
+Step 1: Create a New Project
 
+Step 2: Need to create a Billing Account
+
+Step 3: Link billing account with the project created on step 1
+
+Step 4: Enable APIs that will need to run the dataflow on GCP
+
+Step 5: Download the Google SDK
 
