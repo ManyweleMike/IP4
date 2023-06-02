@@ -15,3 +15,6 @@ Step 4: Enable APIs that will need to run the dataflow on GCP
 
 Step 5: Download the Google SDK
 
+
+done
+
