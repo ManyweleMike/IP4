@@ -1,5 +1,5 @@
 ---
-- name: yolo-ecommerce Playbook
+- name:  Playbook
   hosts: all
   become: yes
 

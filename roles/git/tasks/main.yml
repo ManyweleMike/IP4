@@ -1,0 +1,11 @@
+---
+- name: installing git
+  apt:
+    name: git
+    state: present
+
+- name: clone git repository
+  git:
+    repo: "{{ repo }}"
+    version: "{{ IP3_version}}"
+    dest: "{{ dest }}"

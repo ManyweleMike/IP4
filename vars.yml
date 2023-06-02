@@ -1,0 +1,5 @@
+repo: "https://github.com/ManyweleMike/IP3"
+
+IP3_version: "main"
+
+dest: "/home/mike/IP2"
